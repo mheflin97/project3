@@ -1,0 +1,120 @@
+/*
+header background: #2d3945
+headings: #2d3945
+labels: #55687a
+input areas: #eff0f1
+line breaks: #2d3945
+text: #c7cacd
+button: #4ebbb5
+
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #2d3945;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 1.1em;
+    padding-top: 5%;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #2d3945;
+}
+.border {
+    border-top: 5px solid black;
+    padding: .7% 0;
+    color: #2d3945;
+    border-bottom: 3px solid black;
+}
+main {
+    padding: 5%;
+}
+
+.intro-section p {
+    text-align: center;
+    color: #768593;
+    font-size: .90em;
+    padding-bottom: 5%;
+}
+#form {
+    margin-top: 1%;
+    text-decoration: none;
+    padding: 10% 0;
+}
+
+legend {
+    font-size: 1.1em;
+    font-weight: 900;
+}
+fieldset {
+    border: none;
+}
+
+#contact-info label {
+    color: #768593;
+    display: block;
+    padding-bottom: 3%;
+}
+
+.contact-info input {
+    display: block;
+}
+::placeholder {
+    text-align: right;
+    font-style: italic;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    height: auto;
+    margin: 0;
+    padding: 5%;
+    width: 100%;
+    border-radius: 5%;
+    background-color: #eff0f1;
+    border: none;
+    color: #8a97a0;
+    /* margin-bottom: 30px; */
+}
+
+
+ 
+button {
+    background-color: #4ebbb5;
+    color: #fff;
+    width: 100%;
+    padding: 19px 39px 18px 39px;
+    font-size: 1em;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: #c7cacd;
+    padding: 5%;
+}
