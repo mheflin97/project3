@@ -1,18 +1,12 @@
-/*
-header background: #2d3945
-headings: #2d3945
-labels: #55687a
-input areas: #eff0f1
-line breaks: #2d3945
-text: #c7cacd
-button: #4ebbb5
-
-*/
-
 * {
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
     line-height: 1.5;
+}
+
+body {
+    padding-bottom: 30%;
+    background-color: #FCFAFA;
 }
 
 header {
@@ -37,12 +31,14 @@ h2 {
     font-weight: 900;
     color: #2d3945;
 }
+
 .border {
-    border-top: 5px solid black;
+    border-top: 5px solid #2d3945;
     padding: .7% 0;
     color: #2d3945;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #2d3945;
 }
+
 main {
     padding: 5%;
 }
@@ -53,10 +49,11 @@ main {
     font-size: .90em;
     padding-bottom: 5%;
 }
+
 #form {
     margin-top: 1%;
     text-decoration: none;
-    padding: 10% 0;
+    padding-top: 10%;
 }
 
 legend {
@@ -65,56 +62,125 @@ legend {
 }
 fieldset {
     border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#contact-info {
+    border-bottom: 3px solid #2d3945;
+    padding-bottom: 10%;
 }
 
 #contact-info label {
     color: #768593;
     display: block;
-    padding-bottom: 3%;
+    padding: 3%;
 }
 
 .contact-info input {
     display: block;
 }
+
 ::placeholder {
     text-align: right;
     font-style: italic;
 }
 
 input[type="text"],
-input[type="password"],
 input[type="email"],
 input[type="tel"],
-textarea,
-select {
+select,
+textarea {
     height: auto;
     margin: 0;
+    outline: none;
     padding: 5%;
     width: 100%;
     border-radius: 5%;
     background-color: #eff0f1;
     border: none;
     color: #8a97a0;
-    /* margin-bottom: 30px; */
 }
 
-
+#zip {
+    width: 50%;
+}
  
+.news-info label {
+    color: #768593;
+    display: inline-block;
+    padding: 3%;
+}
+
+.news-text {
+    text-align: left;
+    color: #768593;
+    font-size: .90em;
+    padding-bottom: 5%;
+}
+
 button {
     background-color: #4ebbb5;
     color: #fff;
     width: 100%;
-    padding: 19px 39px 18px 39px;
-    font-size: 1em;
+    padding: 5% 10%;
+    font-size: 1.1em;
     text-align: center;
-    font-style: normal;
     border-radius: 5px;
     border: none;
+    outline: none;
 }
 
 footer {
     text-align: center;
     font-style: italic;
     color: #c7cacd;
-    padding: 5%;
+    margin: 0;
+    font-size: .90em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: #2d3945;
+    transition: all 1s ease-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-bottom: 2px solid #4ebbb5;
+}
+   
+
+@media screen and (min-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact input,
+    .contact select {
+        flex-basis: 75%;
+        margin-bottom: 3%;
+    }
+    .contact label {
+        flex-basis: 25%;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        padding: 3%;
+    }
+    #zip {
+        flex-basis: 25%;
+    }
+    button {
+        padding: 3% 0;
+    }
 }
