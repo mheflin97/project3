@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #2d3945;
+    background-color: #2e2b75;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -81,6 +81,10 @@ fieldset {
     display: block;
 }
 
+textarea::placeholder {
+    text-align: start;
+}
+
 ::placeholder {
     text-align: right;
     font-style: italic;
@@ -141,17 +145,18 @@ footer {
 
 button:hover {
     cursor: pointer;
+    background-color: #2d3945;
 }
 
 button:focus {
     background-color: #2d3945;
-    transition: all 1s ease-out;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
     border-bottom: 2px solid #4ebbb5;
+    transition: all 1s ease-out;
 }
    
 
